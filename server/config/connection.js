@@ -1,16 +1,16 @@
+
 const mongoose = require('mongoose');
 
 mongoose.connect(
   process.env.MONGODB_URI 
-  // || 'mongodb://localhost/workout'
-  
-  ,
-  {
+  || 'mongodb://localhost/googlebooks'
+  , 
+    {
     useNewUrlParser: true,
-    // useUnifiedTopology: true,
-    // useCreateIndex: true,
-    // useFindAndModify: false
-  }
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: true,
+    }
 );
 
 module.exports = mongoose.connection;
