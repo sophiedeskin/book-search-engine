@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 mongoose.connect(
   process.env.MONGODB_URI 
-  || 'mongodb://localhost/googlebooks'
+   || 'mongodb+srv://sophiedeskin:Ags3225!@cluster0.aboxa.mongodb.net/googlebooks?retryWrites=true&w=majority'
   , 
     {
     useNewUrlParser: true,
