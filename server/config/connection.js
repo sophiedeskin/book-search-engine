@@ -2,15 +2,12 @@
 const mongoose = require('mongoose');
 
 mongoose.connect(
-  // process.env.MONGODB_URI 
-  //  || 
-   'mongodb+srv://sophiedeskin:Ags3225!@cluster0.aboxa.mongodb.net/googlebooks?retryWrites=true&w=majority'
-  , 
+  process.env.MONGODB_URI || 'mongodb://localhost/googlebooks', 
     {
     useNewUrlParser: true,
-    // useUnifiedTopology: true,
-    // useCreateIndex: true,
-    // useFindAndModify: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: true,
     }
 );
 
